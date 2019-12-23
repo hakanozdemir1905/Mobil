@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CatchTheBall</string>
+
+    <string name="strTittle">CATCH THE BALL</string>
+    <string name="strStart">Start</string>
+    <string name="strCancel">Cancel</string>
+    <string name="strResume">Resume</string>
+    <string name="strRestart">Restart</string>
+    <string name="strMenu">Menu</string>
+    <string name="strScore">Score: 0</string>
+    <string name="strTime">Left: 15</string>
+    <string name="strExit">Exit</string>
+
+</resources>

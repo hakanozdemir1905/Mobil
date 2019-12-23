@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_action_pause"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:textSize="40sp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_dark_gray2"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="@color/color_white"
+        android:background="@color/color_dark_gray2"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_restart"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/button_resume"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:textSize="40sp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_dark_gray2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_restart"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:text="Score: 0"
+        android:textColor="@color/color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="40sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:text="Left: "
+        android:textColor="@color/color_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <GridLayout
+
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="4"
+        android:rowCount="5">
+
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view10"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view11"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view12"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view13"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view14"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view15"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+        <ImageView
+            android:id="@+id/image_view16"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+        <ImageView
+            android:id="@+id/image_view17"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view18"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view19"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+        <ImageView
+            android:id="@+id/image_view20"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirFutbol"
+            app:srcCompat="@drawable/futbol" />
+
+
+
+
+        <ImageView
+            android:id="@+id/image_view21"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view22"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view23"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view24"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view25"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view26"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view27"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+        <ImageView
+            android:id="@+id/image_view28"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+
+        <ImageView
+            android:id="@+id/image_view29"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view30"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view31"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view32"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view33"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view34"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view35"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view36"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view37"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view38"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view39"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+        <ImageView
+            android:id="@+id/image_view40"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/basketbol" />
+
+
+
+        <ImageView
+            android:id="@+id/image_view41"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view42"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view43"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view44"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view45"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view46"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view47"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+        <ImageView
+            android:id="@+id/image_view48"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+
+
+        <ImageView
+            android:id="@+id/image_view49"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view50"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view51"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view52"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view53"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view54"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view55"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view56"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view57"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view58"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view59"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="scoreAzaltBomba"
+            app:srcCompat="@drawable/bomba" />
+        <ImageView
+            android:id="@+id/image_view60"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:onClick="scoreArttirBasketbol"
+            app:srcCompat="@drawable/bomba" />
+
+
+    </GridLayout>
+
+</RelativeLayout>

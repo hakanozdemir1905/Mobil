@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/text_view_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATCH THE BALL"
+        android:textColor="@color/color_black"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="40sp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_start"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="225dp"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_exit"
+        android:textAllCaps="true"/>
+
+
+    <ImageView
+        android:id="@+id/image_view_basketbol"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/basketbol"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@id/image_view_futbol"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/image_view_futbol"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/futbol"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@id/text_view_tittle"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/image_view_bomba"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/bomba"
+        android:layout_below="@+id/image_view_basketbol"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+       />
+
+
+    <TextView
+        android:id="@+id/text_view_basketbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=   20 Point"
+        android:textSize="20sp"
+        android:textColor="@color/color_black"
+        android:layout_toRightOf="@id/image_view_basketbol"
+        android:layout_alignBottom="@id/image_view_basketbol"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/text_view_futbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=   10 Point"
+        android:textSize="20sp"
+        android:textColor="@color/color_black"
+        android:layout_toRightOf="@id/image_view_futbol"
+        android:layout_alignBottom="@id/image_view_futbol"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text_view_bomba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=  -30 Point"
+        android:textSize="20sp"
+        android:textColor="@color/color_black"
+        android:layout_toRightOf="@id/image_view_bomba"
+        android:layout_alignBottom="@id/image_view_bomba"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
